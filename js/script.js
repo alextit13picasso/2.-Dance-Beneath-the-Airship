@@ -82,7 +82,6 @@ window.camera = function (offsetX, offsetY, scalePercent) {
 			frontImg.style.setProperty('object-position', `${targetX} ${targetY}`, 'important');
 				frontImg.style.setProperty('transform', `scale(${state.currentScale / 100})`, 'important');
 			}
-		}
 
 		// Рендер заднего плана (Фон сцены)
 		const backImg = document.querySelector('[data-screen="game"] [data-image*="_back"]');
