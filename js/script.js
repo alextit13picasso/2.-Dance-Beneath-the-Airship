@@ -273,20 +273,11 @@ monogatari.script({
 	],
 	// --- СЦЕНА 7 ---
 	'scene_7': [
+		window.camera(0, 0, 160),
 		'hide image scene_6_back with fadeOut',
 		'hide image scene_6_front with fadeOut',
 		'show image scene_7_back with fadeIn',
 		'show image scene_7_front with fadeIn',
-
-		function () {
-			/* ЖЕЛЕЗОБЕТОННЫЙ ВЫКЛЮЧАТЕЛЬ: 
-			   Находим холст дождя по ID и полностью скрываем его из видимости */
-			const canvas = document.getElementById('rainCanvas');
-			if (canvas) {
-				canvas.style.display = 'none';
-			}
-			return true; // Важно вернуть true, чтобы Monogatari пошел дальше по сценарию
-		},
 
 		'stop music',
 		'play music ambient_scene7 loop',
@@ -310,7 +301,6 @@ monogatari.script({
 		'play sound scene_7_block_5',
 		'h These are their secrets, their mysteries, handed down from man to man, from boy to boy, never to be uttered before a woman.',
 
-		'show scene #000000 with fadeIn',
 		'jump scene_8'
 	],
 	// --- СЦЕНА 8 ---
@@ -379,7 +369,7 @@ monogatari.script({
 
 		'stop sound',
 		'play sound scene_9_block_5',
-		'hShe opened her eyes.',
+		'She opened her eyes.',
 
 		'stop sound',
 		'play sound scene_9_block_6',
@@ -409,20 +399,10 @@ monogatari.script({
 		'stop sound',
 
 		// 3. Запускаем финальный эмбиент Scene_7.ogg по кругу
-		'play music ambient_scene7 loop',
+		'play music ambient_scene9 loop',
 
 		// 4. Мягко выводим финальный арт на весь экран
 		'show image final_cover with fadeIn',
-
-		function () {
-			/* ЖЕЛЕЗОБЕТОННЫЙ ВЫКЛЮЧАТЕЛЬ ДОЖДЯ: 
-			   Находим холст дождя по ID и полностью скрываем его из видимости */
-			const canvas = document.getElementById('rainCanvas');
-			if (canvas) {
-				canvas.style.display = 'none';
-			}
-			return true;
-		},
 
 		// 5. ТОЛЬКО ТЕПЕРЬ активируем финальные стили и включаем саму кнопку
 		function () {
@@ -453,7 +433,9 @@ monogatari.assets('music', {
 	'ambient_scene4': 'Scene_4.ogg',
 	'ambient_scene5': 'Scene_5.ogg',
 	'ambient_scene6': 'Scene_6.ogg',
-	'ambient_scene7': 'Scene_7.ogg'
+	'ambient_scene7': 'Scene_7.ogg',
+	'ambient_scene8': 'Scene_8.ogg',
+	'ambient_scene9': 'Scene_9.ogg',
 });
 
 monogatari.assets('sounds', {
@@ -506,7 +488,26 @@ monogatari.assets('sounds', {
 	'scene_7_block_1': 'scene_7_block_1.ogg',
 	'scene_7_block_2': 'scene_7_block_2.ogg',
 	'scene_7_block_3': 'scene_7_block_3.ogg',
-	'scene_7_block_4': 'scene_7_block_4.ogg'
+	'scene_7_block_4': 'scene_7_block_4.ogg',
+	'scene_7_block_5': 'scene_7_block_5.ogg',
+
+	'scene_8_block_1': 'scene_8_block_1.ogg',
+	'scene_8_block_2': 'scene_8_block_2.ogg',
+	'scene_8_block_3': 'scene_8_block_3.ogg',
+	'scene_8_block_4': 'scene_8_block_4.ogg',
+	'scene_8_block_5': 'scene_8_block_5.ogg',
+	'scene_8_block_6': 'scene_8_block_6.ogg',
+	'scene_8_block_7': 'scene_8_block_7.ogg',
+
+	'scene_9_block_1': 'scene_9_block_1.ogg',
+	'scene_9_block_2': 'scene_9_block_2.ogg',
+	'scene_9_block_3': 'scene_9_block_3.ogg',
+	'scene_9_block_4': 'scene_9_block_4.ogg',
+	'scene_9_block_5': 'scene_9_block_5.ogg',
+	'scene_9_block_6': 'scene_9_block_6.ogg',
+	'scene_9_block_7': 'scene_9_block_7.ogg',
+	'scene_9_block_8': 'scene_9_block_8.ogg',
+	'scene_9_block_9': 'scene_9_block_9.ogg'
 });
 
 // Регистрируем слои картинок (ищутся в assets/images/)
@@ -539,8 +540,15 @@ monogatari.assets('images', {
 	'scene_7_front': 'scene_7_front.webp',
 	'scene_7_back': 'scene_7_back.webp',
 
+	// Сцена 8
+	'scene_8_front': 'scene_8_front.webp',
+	'scene_8_back': 'scene_8_back.webp',
+
+	// Сцена 8
+	'scene_9_front': 'scene_9_front.webp',
+	'scene_9_back': 'scene_9_back.webp',
+
 	// Сцена Финал
-	'final_cover': 'final_scene_cover.webp',
-	'final_button_asset': 'final_button.webp',
+	'final_cover': 'final_scene_cover.webp'
 });
 
