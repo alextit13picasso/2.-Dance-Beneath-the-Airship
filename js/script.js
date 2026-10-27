@@ -72,16 +72,10 @@ window.camera = function (offsetX, offsetY, scalePercent) {
 
 		// ==========================================
 		// ЧАСТЬ 2: ОЖИВЛЕНИЕ ИГРОВОГО ПРОЦЕССА
-		// ==========================================
-		// Рендер переднего плана (Персонаж в шляпе)
-		const frontImg = document.querySelector('[data-screen="game"] [data-image*="_front"]');
-		if (frontImg) {
-			const targetX = `calc(50% - 60px + ${finalX}px)`;
-			const targetY = `calc(50% + 340px + ${finalY}px)`;
-
-			frontImg.style.setProperty('object-position', `${targetX} ${targetY}`, 'important');
-				frontImg.style.setProperty('transform', `scale(${state.currentScale / 100})`, 'important');
-			}
+				// ==========================================
+		// Передний план (персонаж / пара) не трогаем: он просто лежит
+		// полноразмерным слоем во весь экран (см. CSS [data-image*="_front"]),
+		// как match_parent — никаких сдвигов, зумов и object-position.
 
 		// Рендер заднего плана (Фон сцены)
 		const backImg = document.querySelector('[data-screen="game"] [data-image*="_back"]');
