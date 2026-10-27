@@ -80,7 +80,8 @@ window.camera = function (offsetX, offsetY, scalePercent) {
 			const targetY = `calc(50% + 340px + ${finalY}px)`;
 
 			frontImg.style.setProperty('object-position', `${targetX} ${targetY}`, 'important');
-			frontImg.style.setProperty('transform', `scale(${state.currentScale / 100})`, 'important');
+				frontImg.style.setProperty('transform', `scale(${state.currentScale / 100})`, 'important');
+			}
 		}
 
 		// Рендер заднего плана (Фон сцены)
@@ -120,27 +121,17 @@ monogatari.script({
 	'scene_1': [
 		'play sound scene_1_block_1',
 		window.camera(0, 0, 100),
-		'h A fine, almost invisible drizzle hung in the air, resembling dust more than rain—a comforting cloud that smelled of damp hay, warmth, and the rich earth.',
+		'h Is dance a carnal thing? The natural curves of a body, the distinct contours of flesh, the sharp silhouettes of form.',
 
 		'stop sound',
 		'play sound scene_1_block_2',
 		window.camera(30, -20, 112),
-		'h The scent of mushrooms, wilted grass, and fallen leaves filled the air, as if the houses, the benches, the old tree, and even the neighbor\'s yard-keeper were steeped in this fragrance.',
+		'h The heat radiating from a partner. Breath against breath.',
 
 		'stop sound',
 		'play sound scene_1_block_3',
 		window.camera(35, 85, 100),
-		'h Twelve o’clock, noon, yet it was nearly twilight outside. Heavy, slate-blue clouds seemed to have caught on the treetops.',
-
-		'stop sound',
-		'play sound scene_1_block_4',
-		window.camera(20, 90, 120),
-		'h They filled every inch of space between heaven and earth, until it was impossible to tell with any certainty where the sky began and where it ended.',
-
-		'stop sound',
-		'play sound scene_1_block_5',
-		window.camera(35, 85, 105),
-		'h Yet this weight did not oppress; on the contrary, it felt pleasant and cozy to be wrapped in such an extraordinary atmosphere.',
+		'h Such moments never truly leave the mind; they imprint themselves onto the memory of the involuntary duet until the end of their days, until life itself decides it is enough and cuts the thread.',
 
 		'jump scene_2'
 	],
@@ -158,37 +149,22 @@ monogatari.script({
 		'play sound scene_2_block_1',
 
 		window.camera(0, 0, 100),
-		'h My route stretched across our entire town, which was itself rather modest in size. The way went like this: down a narrow street lined with chestnut trees, then a right turn around an old, two-story brick house swollen with dampness; from there, it ran down a narrow path where even weathered asphalt was a rarity, and spilled into a magnificent park.',
+		'h More so when it unfolds in a place entirely unsuited for dance. Upon a plateau.',
 
 		'stop sound',
 		'play sound scene_2_block_2',
 		window.camera(25, -15, 108),
-		'h Next, it meandered around majestic, now-silent fountains, turning now broad, now paved with cobblestones, then morphing into a muddy trail of protruding roots. At its end, the path opened into a grand boulevard. This boulevard was, in fact, my destination.',
+		'h A solitary plateau with not a single path leading down. Whosoever sets foot on this lonely platform, isolated from the rest of the world, shall never leave it by their own hand.',
 
 		'stop sound',
 		'play sound scene_2_block_3',
 		window.camera(-30, 10, 105),
-		'h Well, truth be told, my goal wasn\'t the boulevard itself, but a beautiful, atmospheric café with an early-twentieth-century interior—never in my life have I seen a cinnabon better than the ones they made there!',
+		'h On every side, they are hemmed in by a precipice—a sheer drop yawning into the literal abyss.',
 
 		'stop sound',
 		'play sound scene_2_block_4',
 		window.camera(45, -25, 115),
-		'h The thick, rich scent of cinnamon, fresh pastries, and coffee guided me, drawing and luring me through the entire town like a bee to syrup in this bleak autumn weather.',
-
-		'stop sound',
-		'play sound scene_2_block_5',
-		window.camera(0, -35, 110),
-		'h Stepping outside, I felt a true magic hit my senses: the olfactory colors of wet leaves and street dampness rushed to my head, every bit as heady as two glasses of something decent from Bordeaux or Burgundy.',
-
-		'stop sound',
-		'play sound scene_2_block_6',
-		window.camera(-15, -15, 103),
-		'h  In that exact moment, the tails of my coat gave in to the wind, powerless to resist it.',
-
-		'stop sound',
-		'play sound scene_2_block_7',
-		window.camera(60, 0, 120),
-		'h My hat, frankly, did much the same. Gathering myself back together, I emerged from the narrow alley and began to stroll slowly along the wet, wide sidewalk.',
+		'h Only a helicopter or an airship could ever carry a soul away from this terrifying ledge.',
 
 		'jump scene_3'
 	],
@@ -205,47 +181,22 @@ monogatari.script({
 		'stop sound',
 		'play sound scene_3_block_1',
 		window.camera(25, 10, 100),
-		'h The cars crawled one after another along the narrow road, no faster than a person’s leisurely stroll, their low beams glistening. Raindrops flashed and sparkled as they drifted through the headlamp beams.',
+		'h It was not merely the setting that was ill-chosen, but the hour. A dark, impenetrable night.',
 
 		'stop sound',
 		'play sound scene_3_block_2',
 		window.camera(15, 20, 106),
-		'h It was as if these drops didn\'t even exist before entering the light, and ceased to be the moment they left it. This nudged me toward grander contemplations; analogies began to creep in, pointing to something far more significant than mere raindrops.',
+		'h A brilliant spotlight, cutting straight down from the heavens, bathed the dancing couple in light, the darkness meekly splintering under the weight of its photons.',
 
 		'stop sound',
 		'play sound scene_3_block_3',
 		window.camera(-40, -20, 112),
-		'h I even paused, lost in these thoughts. But a sharp gust of wet wind shook me back to reality.',
+		'h The beam belonged to a massive airship that blotted out the greater part of the midnight sky.',
 
 		'stop sound',
 		'play sound scene_3_block_4',
 		window.camera(35, -10, 107),
-		'h There was a lingering sense that everyone behind the wheel had just had a heavy lunch and was in absolutely no rush, drifting toward their destinations in a half-slumber.',
-
-		'stop sound',
-		'play sound scene_3_block_5',
-		window.camera(0, 0, 100),
-		'h Everyone was simply moving toward their goals—slowly, calmly, and deliberately.',
-
-		'stop sound',
-		'play sound scene_3_block_6',
-		window.camera(25, -15, 108),
-		'h Take that large, stout man with a tiny mustache in a white panel van; both his hands gripped the top of the steering wheel as he peered through a patch on the fogged-up windshield that had been wiped clean with a rag.',
-
-		'stop sound',
-		'play sound scene_3_block_7',
-		window.camera(-30, 10, 105),
-		'h It was as if he weren\'t looking at something, but rather through it, with no real intention of seeing anything at all.',
-
-		'stop sound',
-		'play sound scene_3_block_8',
-		window.camera(45, -25, 115),
-		'h This must be precisely what they call a "stare into nowhere." He was so lost in thought that he failed to notice the traffic light had been green for several seconds.',
-
-		'stop sound',
-		'play sound scene_3_block_9',
-		window.camera(0, -35, 110),
-		'h The drivers behind him, of course, could never forgive such an oversight: almost simultaneously, a woman in a black Renault and a man in an identical-looking black car—be it another Renault, a Fiat, or something else entirely—used their horns to let their absent-minded companion know it was time to move.',
+		'h Its rounded, elongated hull was caught on one side by the glow of the moon, the entire structure hovering just above the dancers\' heads.',
 
 		'jump scene_4'
 	],
@@ -262,27 +213,17 @@ monogatari.script({
 		'stop sound',
 		'play sound scene_4_block_1',
 		window.camera(0, 0, 100),
-		'h The rare pedestrians, mostly huddled under umbrellas, looked much more hurried and somewhat anxious; they rushed along, occasionally even breaking into a run.',
+		'h The man’s black shoes were polished to such a mirror shine that the reflected moonlight took on deep, brownish undertones.',
 
 		'stop sound',
 		'play sound scene_4_block_2',
 		window.camera(-15, -15, 103),
-		'h Passing under the heavy branches of the old chestnut trees, they would slow their pace, as if believing they were now under the reliable protection of the spreading canopies, completely safe from the raindrops.',
+		'h His soles sank softly into the low, immaculately manicured grass.',
 
 		'stop sound',
 		'play sound scene_4_block_3',
 		window.camera(60, 0, 120),
-		'h But then, they would quicken their steps again, eager to reach the next tree.',
-
-		'stop sound',
-		'play sound scene_4_block_4',
-		window.camera(15, 20, 106),
-		'h I walked to the end of the street and turned right onto a narrow path that resembled a woodland trail more than a pedestrian walkway. Puddles lay scattered here and there, and the fine drizzle agitated the muddy water, tossing it upward and splashing it outward.',
-
-		'stop sound',
-		'play sound scene_4_block_5',
-		window.camera(-40, -20, 112),
-		'h  I felt my right shoe finally give in, and a quite respectable dampness settled inside. Here, the hum of cars was barely audible, and I could clearly discern the strike of droplets against the wet leaves and grass—a quiet, lulling rustle.',
+		'h The lady’s slippers, which were little more than thin soles bound by delicate threads, were swallowed almost entirely by the lawn, gently pressing against the tender contours of her feet.',
 
 		'jump scene_5'
 	],
@@ -299,42 +240,27 @@ monogatari.script({
 		'stop sound',
 		'play sound scene_5_block_1',
 		window.camera(0, 0, 100),
-		'h Surprisingly, as I drew closer to the park, it became distinctly clear that some branches were already completely bare, having shed their leaves. Yellow, orange, gray, and brown hues filled this wonderful place, blending together despite being foreign to one another.',
+		'h Around and around they spun, carrying one another, dissolving into each other.',
 
 		'stop sound',
 		'play sound scene_5_block_2',
 		window.camera(35, -10, 107),
-		'h A few rare birds, puffed up and looking porous, sat on the branches; some were still trying to pipe their own tunes, which seemed utterly out of keeping with the overall theme of autumn.',
+		'h He enveloped her entirely, and she was wholly lost in him. The music?',
 
 		'stop sound',
 		'play sound scene_5_block_3',
 		window.camera(25, -15, 108),
-		'h Yet it was these very sounds that filled the park with that uneven hum which, merging with the whisper of rain and wind, expanded to fill the entire universe.',
+		'h It thundered so loudly that one could not hear the sound of their own breath.',
 
 		'stop sound',
 		'play sound scene_5_block_4',
 		window.camera(-30, 10, 105),
-		'h It was fascinating to watch a squirrel, entirely unfazed by the occasional passersby, trying to forage another winter stash as it darted lightning-fast from tree to tree.',
+		'h For a fleeting second, a tremor of fear struck them—a dread that their eardrums might surrender and snap under the strain.',
 
 		'stop sound',
 		'play sound scene_5_block_5',
 		window.camera(45, -25, 115),
-		'h Now and then, it would briskly scamper almost to the very top of a poplar or a maple, then drop down sharply—it seemed as though it would surely crash, but no, this red flash proved a hundred times more agile than the boldest thought and faster than the soberest mind, for there it already was, ten meters from where it had been just a second ago.',
-
-		'stop sound',
-		'play sound scene_5_block_6',
-		window.camera(0, -35, 110),
-		'h A magpie—I hadn\'t seen a magpie in ages! And here it was. A wet, heavy, plump autumn bird, it flew from one tree to another with quick, beating wings. It was as if someone had turned down the saturation for it: it was black and white, yet it possessed its own colors.',
-
-		'stop sound',
-		'play sound scene_5_block_7',
-		window.camera(-15, -15, 103),
-		'h Its feathers, even drenched, shimmered in the meager light that the sky so graciously bestowed upon us. I couldn\'t help but stop, fixing my gaze on the bird.',
-
-		'stop sound',
-		'play sound scene_5_block_8',
-		window.camera(60, 0, 120),
-		'h  It seemed to have decided to mimic the people passing by—as if it, too, was in no hurry at all, simply shifting from tree to tree in a measured way and looking about, sharply turning its head now left, now right',
+		'h The sound, too, cascaded from above, echoing from the belly of the airship.',
 
 		'jump scene_6'
 	],
@@ -350,32 +276,22 @@ monogatari.script({
 		'stop sound',
 		'play sound scene_6_block_1',
 		window.camera(0, 0, 100),
-		'h I came upon a small pond at the very edge of the park. It was shallow, and through its crystalline water, the bottom was clearly visible.',
+		'h Her legs, damp with a faint sheen of sweat and warm to the touch, felt as unyielding as steel yet as soft as butter.',
 
 		'stop sound',
 		'play sound scene_6_block_2',
 		window.camera(15, 20, 106),
-		'h It was entirely carpeted with brown leaves, mirroring the surrounding landscape perfectly and fitting into the overall scene with surprising harmony.',
+		'h A permissible softness; elastic, resilient.',
 
 		'stop sound',
 		'play sound scene_6_block_3',
 		window.camera(-40, -20, 112),
-		'h Here, the scent of earth and mushrooms grew even stronger; the leaves, mindfully raked into piles by the park keepers, had begun to decompose, releasing their own peculiar vapors into the air—vations that compelled you to fall in love with it all. I felt the raindrops finally reach my back…',
+		'h The textured friction of stockings, and higher still, the curve of her waist.',
 
 		'stop sound',
 		'play sound scene_6_block_4',
 		window.camera(35, -10, 107),
-		'h Leaving the park, I found myself right at the beginning of that very same exquisite boulevard. A fairly narrow pedestrian path, lined with vintage benches on either side, was flanked by rows of old, decrepit maples.',
-
-		'stop sound',
-		'play sound scene_6_block_5',
-		window.camera(25, -15, 108),
-		'h These rows, in turn, were framed by two narrow asphalt roads. I walked slowly down the boulevard, and then, there it was: the smell of fresh, utterly enticing pastries.',
-
-		'stop sound',
-		'play sound scene_6_block_6',
-		window.camera(-30, 10, 105),
-		'h And that sweet glaze! Even without seeing the baked goods, I could already feel the texture, the softness, and the taste of those incomparable cinnabons, croissants, and coffee.',
+		'h Such a composition could eclipse any masterwork of art, for it was the primal source from which all the world’s masterpieces were drawn, sculpted, and brought to life.',
 
 		'jump scene_7'
 	],
@@ -401,24 +317,131 @@ monogatari.script({
 		'stop sound',
 		'play sound scene_7_block_1',
 		window.camera(0, 0, 100),
-		'h Not a single moment could be lost—it was simply unacceptable! The instant I pushed open the café door and caught the crackle of the fireplace, I found myself in a completely different world, one utterly foreign to the autumn wind and rain.',
+		'h He was large, and his scent possessed a weight that practically forced her to her knees.',
 
 		'stop sound',
 		'play sound scene_7_block_2',
 		window.camera(-45, 65, 115),
-		'h A cozy warmth, hot even, rushed over me like an avalanche, flushing my cold face with color; it shamed me, yet instantly enveloped me.',
+		'h With every swirl of the dance, every subtle turn, a thick layer of his cologne enveloped her—sharp, inherently masculine, perfectly virile, charged with a meaning entirely foreign to her own.',
 
 		'stop sound',
 		'play sound scene_7_block_3',
 		window.camera(0, 55, 110),
-		'h It slipped off my coat and hat, took my wet umbrella, and lifted me right off the floor, nearly to the ceiling, carrying me across the wide, spacious hall of the café to seat me at a round table—right by a small window with a sill that offered a beautiful view of the boulevard. Wet, rainy, and smelling of mushrooms.',
+		'h He smelled of an alien philosophy, and she found a quiet pleasure in it.',
 
 		'stop sound',
 		'play sound scene_7_block_4',
 		window.camera(-75, 75, 103),
-		'h Coffee was brought!',
+		'h She could not name that philosophy, yet she knew with absolute certainty that it was saturated with a world she did not belong to—the things men never speak of aloud, whispering them at most.',
+
+		'stop sound',
+		'play sound scene_7_block_5',
+		window.camera(-45, 65, 115),
+		'h These are their secrets, their mysteries, handed down from man to man, from boy to boy, never to be uttered before a woman.',
 
 		'show scene #000000 with fadeIn',
+		'jump scene_8'
+	],
+	// --- СЦЕНА 8 ---
+	'scene_8': [
+		'hide image scene_7_back with fadeOut',
+		'hide image scene_7_front with fadeOut',
+		'show image scene_8_back with fadeIn',
+		'show image scene_8_front with fadeIn',
+
+		'stop music',
+		'play music ambient_scene8 loop',
+		'stop sound',
+		'play sound scene_8_block_1',
+		window.camera(0, 0, 100),
+		'h The dance did not cease; it had lingered now for several years, perhaps even decades, yet the dancers felt not the slightest touch of weariness.',
+
+		'stop sound',
+		'play sound scene_8_block_2',
+		window.camera(15, 20, 106),
+		'h Quite the contrary.',
+
+		'stop sound',
+		'play sound scene_8_block_3',
+		window.camera(-40, -20, 112),
+		'h The movement lent them strength, feeding them vitality and a certain haunting curiosity.',
+
+		'stop sound',
+		'play sound scene_8_block_4',
+		window.camera(35, -10, 107),
+		'h It was this curiosity that urged them forward, leading them, spinning them, pressing their bodies tight against one another.',
+
+		'stop sound',
+		'play sound scene_8_block_5',
+		window.camera(-45, 65, 115),
+		'h They had known each other for an eternity, despite their seemingly tender age.',
+
+		'stop sound',
+		'play sound scene_8_block_6',
+		window.camera(-75, 75, 103),
+		'h They knew the geometry of this dance by heart.',
+
+		'stop sound',
+		'play sound scene_8_block_7',
+		window.camera(15, 20, 106),
+		'h With that same effortless precision, he knew exactly where her foot would fall in the next heartbeat, and she knew with equal certainty the exact measure of force with which his hand would cradle her waist in the coming turn.',
+
+		'jump scene_9'
+	],
+	// --- СЦЕНА 9 ---
+	'scene_9': [
+		'hide image scene_8_back with fadeOut',
+		'hide image scene_8_front with fadeOut',
+		'show image scene_9_back with fadeIn',
+		'show image scene_9_front with fadeIn',
+
+		'stop music',
+		'play music ambient_scene9 loop',
+		'stop sound',
+		'play sound scene_9_block_1',
+		window.camera(0, 0, 100),
+		'h The final thing our dancers beheld was a flash.',
+
+		'stop sound',
+		'play sound scene_9_block_2',
+		window.camera(15, 20, 106),
+		'h A flash of darkness. Without a syllable of warning, the airship vanished—literally flickering out of existence.',
+
+		'stop sound',
+		'play sound scene_9_block_3',
+		window.camera(-40, -20, 112),
+		'h The music, a beautiful classical piece, died in an instant.',
+
+		'stop sound',
+		'play sound scene_9_block_4',
+		window.camera(35, -10, 107),
+		'h Everything was plunged into an absolute, suffocating silence, into the dark.',
+
+		'stop sound',
+		'play sound scene_9_block_5',
+		window.camera(-45, 65, 115),
+		'hShe opened her eyes.',
+
+		'stop sound',
+		'play sound scene_9_block_6',
+		window.camera(-75, 75, 103),
+		'h The wall clock read 3:12 in the morning.',
+
+		'stop sound',
+		'play sound scene_9_block_7',
+		window.camera(15, 20, 106),
+		'h Upon the bedside nightstand lay her pills, as they always did, alongside her glasses in their large, old frame, and two framed black-and-white photographs.',
+
+		'stop sound',
+		'play sound scene_9_block_8',
+		window.camera(-45, 65, 115),
+		'h In one picture were her grandchildren.',
+
+		'stop sound',
+		'play sound scene_9_block_9',
+		window.camera(35, -10, 107),
+		'h In the second was the man over whose head, a mere heartbeat ago, the airship had vanished.',
+
 		'jump scene_final'
 	],
 	// Финальная сцена
