@@ -85,7 +85,7 @@ $_ready(() => {
 					console.log(`⏱️ [ПАНДОРА ТАЙМИНГ] Файл "${asset}" длится: ${duration} сек.`);
 					// === НАЧАЛО БЛОКА РАСЧЕТА ПРОГРЕССА (ПЕРЕПИСАННЫЙ) ===
 					try {
-						const totalBlocks = 44;
+						const totalBlocks = 35;
 						const currentLabel = monogatari.state('label') || 'scene_1';
 
 						// Вытаскиваем номер блока прямо из имени файла (например, из "scene_1_block_2" достанет 2)
@@ -93,12 +93,14 @@ $_ready(() => {
 						const stepInLabel = match ? parseInt(match[1], 10) - 1 : 0;
 
 						let previousBlocksOffset = 0;
-						if (currentLabel === 'scene_2') previousBlocksOffset = 5;
-						if (currentLabel === 'scene_3') previousBlocksOffset = 12;
-						if (currentLabel === 'scene_4') previousBlocksOffset = 21;
-						if (currentLabel === 'scene_5') previousBlocksOffset = 26;
-						if (currentLabel === 'scene_6') previousBlocksOffset = 34;
-						if (currentLabel === 'scene_7') previousBlocksOffset = 40;
+						if (currentLabel === 'scene_2') previousBlocksOffset = 4;
+						if (currentLabel === 'scene_3') previousBlocksOffset = 8;
+						if (currentLabel === 'scene_4') previousBlocksOffset = 12;
+						if (currentLabel === 'scene_5') previousBlocksOffset = 15;
+						if (currentLabel === 'scene_6') previousBlocksOffset = 18;
+						if (currentLabel === 'scene_7') previousBlocksOffset = 21;
+						if (currentLabel === 'scene_8') previousBlocksOffset = 25;
+						if (currentLabel === 'scene_9') previousBlocksOffset = 30;
 
 						const absoluteCurrentStep = previousBlocksOffset + stepInLabel;
 						const progressPercent = Math.min(((absoluteCurrentStep + 1) / totalBlocks) * 100, 100);

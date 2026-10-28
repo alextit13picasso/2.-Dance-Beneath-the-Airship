@@ -119,15 +119,15 @@ monogatari.script({
 	// --- СЦЕНА 1 ---
 	'scene_1': [
 		'play sound scene_1_block_1',
-		'h Is dance a carnal thing? The natural curves of a body, the distinct contours of flesh, the sharp silhouettes of form.',
+		'h Танец - это сексуально? Натурные изгибы тела, форменные телесные впадины, четко выраженные формы.',
 
 		'stop sound',
 		'play sound scene_1_block_2',
-		'h The heat radiating from a partner. Breath against breath.',
+		'h Жар, исходящий от партнера. Дыхание лицо в лицо.',
 
 		'stop sound',
 		'play sound scene_1_block_3',
-		'h Such moments never truly leave the mind; they imprint themselves onto the memory of the involuntary duet until the end of their days, until life itself decides it is enough and cuts the thread.',
+		'h Такие мгновения никогда не покидают разум, они фиксируются отпечатком в памяти невольного дуэта до сочтения дней их, до того, как сама жизнь не решит что хватит и не поставит точку.',
 
 		'jump scene_2'
 	],
@@ -144,19 +144,19 @@ monogatari.script({
 		'stop sound',
 		'play sound scene_2_block_1',
 
-		'h More so when it unfolds in a place entirely unsuited for dance. Upon a plateau.',
+		'h Тем более если это происходит в совсем неподходящем для танца месте.',
 
 		'stop sound',
 		'play sound scene_2_block_2',
-		'h A solitary plateau with not a single path leading down. Whosoever sets foot on this lonely platform, isolated from the rest of the world, shall never leave it by their own hand.',
+		'h А именно - на плато. На таком плато, где нет ни единой дороги вниз.',
 
 		'stop sound',
 		'play sound scene_2_block_3',
-		'h On every side, they are hemmed in by a precipice—a sheer drop yawning into the literal abyss.',
+		'h Тот кто попадает на эту изолированную от мира платформу, никогда сам ее не покинет: со всех сторон окружен он обрывом, обрывом, уходящим буквально в бездну.',
 
 		'stop sound',
 		'play sound scene_2_block_4',
-		'h Only a helicopter or an airship could ever carry a soul away from this terrifying ledge.',
+		'h Лишь вертолет или дирижабль был в состоянии увезти посетителя с этого ужасающего места.',
 
 		'jump scene_3'
 	],
@@ -172,19 +172,19 @@ monogatari.script({
 		'play music ambient_scene3 loop',
 		'stop sound',
 		'play sound scene_3_block_1',
-		'h It was not merely the setting that was ill-chosen, but the hour. A dark, impenetrable night.',
+		'h Не только место было неподходящим, но и время. Темная, непроглядная ночь.',
 
 		'stop sound',
 		'play sound scene_3_block_2',
-		'h A brilliant spotlight, cutting straight down from the heavens, bathed the dancing couple in light, the darkness meekly splintering under the weight of its photons.',
+		'h Яркий прожектор, освещающий танцующую пару бил прямо с неба, и тьма покорно расщеплялась под напором его фотонов.',
 
 		'stop sound',
 		'play sound scene_3_block_3',
-		'h The beam belonged to a massive airship that blotted out the greater part of the midnight sky.',
+		'h Он был закреплен на большом дирижабле, который перекрывал собой бОльшую часть полуночного неба.',
 
 		'stop sound',
 		'play sound scene_3_block_4',
-		'h Its rounded, elongated hull was caught on one side by the glow of the moon, the entire structure hovering just above the dancers\' heads.',
+		'h Его круглый, вытянутый корпус с одной стороны был освещен луной, и вся конструкция парила как раз над самыми головами танцующих.',
 
 		'jump scene_4'
 	],
@@ -200,15 +200,15 @@ monogatari.script({
 		'play music ambient_scene4 loop',
 		'stop sound',
 		'play sound scene_4_block_1',
-		'h The man’s black shoes were polished to such a mirror shine that the reflected moonlight took on deep, brownish undertones.',
+		'h Черные туфли мужчины были начищены до такого блеска, что лунный свет на них переходил в коричневатые оттенки.',
 
 		'stop sound',
 		'play sound scene_4_block_2',
-		'h His soles sank softly into the low, immaculately manicured grass.',
+		'h Туфли мягко утопали в низкой, идеально подстриженной траве.',
 
 		'stop sound',
 		'play sound scene_4_block_3',
-		'h The lady’s slippers, which were little more than thin soles bound by delicate threads, were swallowed almost entirely by the lawn, gently pressing against the tender contours of her feet.',
+		'h Дамские же туфельки, представляющие собой скорее подошву с веревочками, почти полностью утопали в газоне, и лишь слегка сплющивали нежную ступню.',
 
 		'jump scene_5'
 	],
@@ -224,23 +224,15 @@ monogatari.script({
 		'play music ambient_scene5 loop',
 		'stop sound',
 		'play sound scene_5_block_1',
-		'h Around and around they spun, carrying one another, dissolving into each other.',
+		'h Пара кружилась, пара несла друг друга и растворялась друг в друге. Он обнимал ее собой а она была вся в нем.',
 
 		'stop sound',
 		'play sound scene_5_block_2',
-		'h He enveloped her entirely, and she was wholly lost in him. The music?',
+		'h Музыка? Музыка звучала настолько громко, что не было слышно даже собственного дыхания.',
 
 		'stop sound',
 		'play sound scene_5_block_3',
-		'h It thundered so loudly that one could not hear the sound of their own breath.',
-
-		'stop sound',
-		'play sound scene_5_block_4',
-		'h For a fleeting second, a tremor of fear struck them—a dread that their eardrums might surrender and snap under the strain.',
-
-		'stop sound',
-		'play sound scene_5_block_5',
-		'h The sound, too, cascaded from above, echoing from the belly of the airship.',
+		'h В некоторый момент наши танцоры даже испытали страх, что их барабанные перепонки могут не выдержать и лопнут. Звук так же доносился с неба, из дирижабля.',
 
 		'jump scene_6'
 	],
@@ -255,19 +247,15 @@ monogatari.script({
 		'play music ambient_scene6 loop',
 		'stop sound',
 		'play sound scene_6_block_1',
-		'h Her legs, damp with a faint sheen of sweat and warm to the touch, felt as unyielding as steel yet as soft as butter.',
+		'h Ее ноги, слегка липкие от пота, горячие, были тверды как сталь и мягкие как масло.',
 
 		'stop sound',
 		'play sound scene_6_block_2',
-		'h A permissible softness; elastic, resilient.',
+		'h Допустимо мягкие, скорее упругие. Текстура чулков, а выше талия.',
 
 		'stop sound',
 		'play sound scene_6_block_3',
-		'h The textured friction of stockings, and higher still, the curve of her waist.',
-
-		'stop sound',
-		'play sound scene_6_block_4',
-		'h Such a composition could eclipse any masterwork of art, for it was the primal source from which all the world’s masterpieces were drawn, sculpted, and brought to life.',
+		'h Такая композиция могла превзойти любое произведение искусства ибо являлась оригиналом, с которого рисовались, лепились, создавались все мировые шедевры.',
 
 		'jump scene_7'
 	],
@@ -283,23 +271,19 @@ monogatari.script({
 		'play music ambient_scene7 loop',
 		'stop sound',
 		'play sound scene_7_block_1',
-		'h He was large, and his scent possessed a weight that practically forced her to her knees.',
+		'h Он был большим, а его запах буквально ставил ее на колени.',
 
 		'stop sound',
 		'play sound scene_7_block_2',
-		'h With every swirl of the dance, every subtle turn, a thick layer of his cologne enveloped her—sharp, inherently masculine, perfectly virile, charged with a meaning entirely foreign to her own.',
+		'h Каждый виток танца, каждый легкий его поворот окутывал ее густым слоем его духов, резких, индикаторно-мужских, идеально-мужчинских, наполненных каким-то другим, не ее смыслом.',
 
 		'stop sound',
 		'play sound scene_7_block_3',
-		'h He smelled of an alien philosophy, and she found a quiet pleasure in it.',
+		'h Он пах другой философией, и ей это было приятно. Она не знала каким, но знала точно, что очень наполненным чуждой ей атмосферой, тем, о чем мужчины не говорят, максимум шепчутся.',
 
 		'stop sound',
 		'play sound scene_7_block_4',
-		'h She could not name that philosophy, yet she knew with absolute certainty that it was saturated with a world she did not belong to—the things men never speak of aloud, whispering them at most.',
-
-		'stop sound',
-		'play sound scene_7_block_5',
-		'h These are their secrets, their mysteries, handed down from man to man, from boy to boy, never to be uttered before a woman.',
+		'h Это их секреты, их тайны, передающиеся от мужчины мужчине, от мальчика мальчику, но о них не говорят женщинам.',
 
 		'jump scene_8'
 	],
@@ -314,31 +298,23 @@ monogatari.script({
 		'play music ambient_scene8 loop',
 		'stop sound',
 		'play sound scene_8_block_1',
-		'h The dance did not cease; it had lingered now for several years, perhaps even decades, yet the dancers felt not the slightest touch of weariness.',
+		'h Танец не заканчивался, он длился уже несколько лет, даже десятилетий, но танцоры ни капли не устали.',
 
 		'stop sound',
 		'play sound scene_8_block_2',
-		'h Quite the contrary.',
+		'h Наоборот. Танец давал им силы, давал им энергию и какой-то таинственный интерес.',
 
 		'stop sound',
 		'play sound scene_8_block_3',
-		'h The movement lent them strength, feeding them vitality and a certain haunting curiosity.',
+		'h Именно этот интерес двигал их вперед, этот интерес вел их, кружил их и прижимал друг к другу.',
 
 		'stop sound',
 		'play sound scene_8_block_4',
-		'h It was this curiosity that urged them forward, leading them, spinning them, pressing their bodies tight against one another.',
+		'h Они были знакомы очень давно, несмотря на столь юный их возраст. Они прекрасно знали этот танец.',
 
 		'stop sound',
 		'play sound scene_8_block_5',
-		'h They had known each other for an eternity, despite their seemingly tender age.',
-
-		'stop sound',
-		'play sound scene_8_block_6',
-		'h They knew the geometry of this dance by heart.',
-
-		'stop sound',
-		'play sound scene_8_block_7',
-		'h With that same effortless precision, he knew exactly where her foot would fall in the next heartbeat, and she knew with equal certainty the exact measure of force with which his hand would cradle her waist in the coming turn.',
+		'h Столь же точно он знал куда она в следующий миг поставит ногу, а она с той же уверенностью знала с какой силой его рука сожмет ее талию в следующем обороте.',
 
 		'jump scene_9'
 	],
@@ -353,40 +329,29 @@ monogatari.script({
 		'play music ambient_scene9 loop',
 		'stop sound',
 		'play sound scene_9_block_1',
-		'h The final thing our dancers beheld was a flash.',
+		'h Последним что видели наши танцоры стала вспышка. Вспышка темноты.',
 
 		'stop sound',
 		'play sound scene_9_block_2',
-		'h A flash of darkness. Without a syllable of warning, the airship vanished—literally flickering out of existence.',
+		'h Дирижабль без никакого предупреждения пропал, буквально вспыхнул и исчез.',
 
 		'stop sound',
 		'play sound scene_9_block_3',
-		'h The music, a beautiful classical piece, died in an instant.',
+		'h Музыка, прекрасная классика в миг замолчала. Все погрузилось в полную тишину, в тьму.',
 
 		'stop sound',
 		'play sound scene_9_block_4',
-		'h Everything was plunged into an absolute, suffocating silence, into the dark.',
+		'h Она открыла глаза. Настенные часы показывали 3 часа ночи.',
 
 		'stop sound',
 		'play sound scene_9_block_5',
-		'She opened her eyes.',
+		'h На прикроватной тумбочке по прежнему лежали ее таблетки, очки в большой старой оправе, и две рамки с черно-белыми фото.',
 
 		'stop sound',
 		'play sound scene_9_block_6',
-		'h The wall clock read 3:12 in the morning.',
+		'h На одной фото ее внуки. На второй фото - тот, над кем мгновение назад пропал дирижабль.',
 
 		'stop sound',
-		'play sound scene_9_block_7',
-		'h Upon the bedside nightstand lay her pills, as they always did, alongside her glasses in their large, old frame, and two framed black-and-white photographs.',
-
-		'stop sound',
-		'play sound scene_9_block_8',
-		'h In one picture were her grandchildren.',
-
-		'stop sound',
-		'play sound scene_9_block_9',
-		'h In the second was the man over whose head, a mere heartbeat ago, the airship had vanished.',
-
 		'jump scene_final'
 	],
 	// Финальная сцена
